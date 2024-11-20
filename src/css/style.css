@@ -1,0 +1,33 @@
+body {
+    color: #999;
+    margin: 0;  
+}
+
+.game_container {
+    background-color: rgb(203, 246, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gametable {
+    background-image: url("../img/пончики.jpg");
+    background-size: cover;
+    width: 80vmin;
+    height: 80vmin;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.table_cell {
+    border: 2px solid black;
+    width: 25%;
+    height: 25;
+}
+
+.has_goblin {
+    background-image: url("../img/goblin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
