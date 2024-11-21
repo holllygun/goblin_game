@@ -8,8 +8,8 @@ export default class Game {
   }
 
   init() {
+    this.generateTable();
     document.addEventListener("DOMContentLoaded", () => {
-      this.generateTable();
       this.activateRandomCell();
       this.changeCell();
     });
