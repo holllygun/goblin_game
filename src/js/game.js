@@ -12,7 +12,6 @@ export default class Game {
       this.generateTable();
       this.activateRandomCell();
       this.changeCell();
-      this.generateTable();
     });
   }
 
