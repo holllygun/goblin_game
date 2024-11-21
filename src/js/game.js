@@ -9,9 +9,38 @@ export default class Game {
 
   init() {
     document.addEventListener("DOMContentLoaded", () => {
+      this.generateTable();
       this.activateRandomCell();
       this.changeCell();
+      this.generateTable();
     });
+  }
+
+  generateTable() {
+    const div = document.createElement("div");
+    div.classList.add("game_container");
+    document.querySelector("body").appendChild(div);
+
+    const table = document.createElement("table");
+    table.classList.add("gametable");
+    table.setAttribute("id", "gameTable");
+    div.appendChild(table);
+
+    let cellId = 1;
+
+    for (let x = 0; x < 4; x++) {
+      const tr = document.createElement("tr");
+
+      for (let y = 0; y < 4; y++) {
+        const td = document.createElement("td");
+        td.classList.add("table_cell");
+        tr.classList.add("table_column");
+        td.setAttribute("id", `cell_${cellId}`);
+        tr.appendChild(td);
+        cellId++;
+      }
+      table.appendChild(tr);
+    }
   }
 
   activateRandomCell() {
