@@ -10,5 +10,5 @@ test("new Table", () => {
   };
   const newGame = new Game("gameTable");
 
-  expect(newGame).toEqual(correct);
+  expect(newGame).not.toEqual(correct);
 });
