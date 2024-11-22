@@ -12,6 +12,7 @@ body {
 }
 
 .gametable {
+    cursor: url("../img/hammer1.png"), pointer;
     background-image: url("../img/пончики.jpg");
     background-size: cover;
     width: 80vmin;
