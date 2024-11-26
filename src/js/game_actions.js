@@ -1,6 +1,6 @@
 export default class gameActions {
   constructor({ htmlTable, gameTable, gameScore }) {
-    this.htmlTable = htmlTable
+    this.htmlTable = htmlTable;
     this.gameTable = gameTable;
     this.gameScore = gameScore;
 
@@ -17,6 +17,7 @@ export default class gameActions {
       } else {
         this.missed();
       }
+
       this.endGame();
     });
   }

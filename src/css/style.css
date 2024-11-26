@@ -1,13 +1,23 @@
 body {
     color: #999;
     margin: 0; 
+    background-color: rgb(203, 246, 225);
 }
 
-.game_container {
-    background-color: rgb(203, 246, 225);
+
+.wrapper {
+    width: 100%;
     display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    
+}
+.game_container {
     justify-content: center;
     align-items: center;
+    width: 80%;
+    background-color: rgb(203, 246, 225);
+    display: flex;
     height: 100vh;
 }
 
@@ -31,4 +41,41 @@ body {
     background-image: url("../img/goblin.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.counter_wrapper {
+    margin-left: 10px;
+}
+
+.field_wrapper {
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid rgba(9, 9, 245, 0.2);
+    color: rgb(0, 0, 0);
+    background-color: rgb(117, 189, 252);
+    margin-right: 10px;
+}
+
+.text {
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.loser {
+    color: black;
+    background-color: rgb(235, 41, 38);
+}
+
+.winner {
+    color: white;
+    background-color: rgb(71, 207, 75);
+}
+
+.hidden { 
+    visibility: hidden;
+}
+
+.count {
+    display: inline;
 }

@@ -9,7 +9,7 @@ export default class gameTable {
   generateTable() {
     const div = document.createElement("div");
     div.classList.add("game_container");
-    document.querySelector("body").appendChild(div);
+    document.querySelector(".wrapper").appendChild(div);
 
     const htmlTable = document.createElement("table");
     htmlTable.classList.add("gametable");
